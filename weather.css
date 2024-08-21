@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    min-width: 25vw;
+    background-color: #22e68a;
+    border-radius: 1.5rem; 
+    padding: 1.5rem;
+    color: black;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0.2rem; */
+}
+.card input{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 1.2rem;
+    background-color: white;
+    min-width: 20vw; 
+    height: 6vh;
+}
+.card button{
+    border: none;
+    padding: 0.5rem;
+    margin-left: -16px;
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    cursor: pointer;
+    background-color: white;
+    height: 6vh;
+    min-width: 5vw;
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+img{
+    margin-top: 1rem;
+    /* background-color: transparent; */
+    width: 10vw;
+    height: auto;
+}
+.humidity{
+    width: 2.5vw;
+    height: auto;
+}
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;/*Without height width justify content,align-content doesn't work properly*/
+    /* gap: 5rem; */
+}
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0.5rem; */
+}
+.txt{
+    margin-top: 10px;
+    color: black;
+}
+.display{
+    display: none;
+}
+.error{
+    margin-top: 10px;
+    color: blue;
+    display: none;
+}

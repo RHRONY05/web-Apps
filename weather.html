@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="card">
+    <div class="search">
+      <!-- spellcheck="false" gives you control over whether users see spell-check suggestions or underlines in specific fields. -->
+      <input type="text" placeholder="enter city name" spellcheck="false">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="error">
+      <i><b>*Invalid city name</b></i>
+    </div>
+
+    <div class="weather display">
+      <img class="weather-icon" src="images/summer-rain-vector-icon__1_-removebg-preview.png" alt="img not found">
+      <h1 id="temp">28°c</h1>
+      <h2 id="city">Chittagong</h2>
+      <div class="details">
+        <div class="col">
+          <img src="images/humidity2-removebg-preview.png" class="humidity" alt="img not found">
+          <div class="txt">
+            <p id="humidity"><b>50%</b></p>
+            <p><b>Humidity</b></p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="images/Windy-512.webp" class="humidity" alt="img not found">
+          <div class="txt">
+            <p id="wind"><b>15 km/h</b></p>
+            <p><b>Wind Speed</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+
+</html>
