@@ -1,0 +1,83 @@
+/* outline: none; button ba input e click korle je border ashe ta disable kore */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* @media screen and (min-width: 560px) {
+    .container{
+        min-width: 90vw;
+    }
+} */
+button{
+    cursor: pointer;
+}
+body{
+    background-color: #94d2bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: white;
+    /*width: 20vw; */
+    min-width: 20vw;/*responsive*/
+    height: 62%;
+    border-radius: 1rem;
+    padding: 20px;
+}
+form{
+    font-weight: 300;
+}
+form input,
+select,button{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.amount{
+    margin: 2rem 0 10px 0;
+}
+.total-amount input{
+    border: 2px solid #edede9;
+    border-radius: 0.5rem;
+    padding: 10px 0 10px 5px;
+}
+.amount input{
+    border: 2px solid #edede9;
+    border-radius: 0.5rem;
+    padding: 10px 0 10px 5px;
+}
+select{
+    cursor: pointer;
+}
+.select-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 10px 0;
+}
+.select-container img{
+    width: 2rem;
+}
+.select{
+    display: flex;
+    border: 2px solid #edede9;
+    border-radius: 0.5rem;
+    padding: 0px 0px 0px 5px;
+}
+.icon{
+    margin: 1.8rem 10px 0 10px;
+}
+#msg{
+    margin: 2rem 0 10px 0;
+}
+.button{
+    margin-top: 0.3rem;
+    background-color: #bc4749;
+    border-radius: 0.5rem;
+    padding: 10px 0 10px 0px;
+    color: white;
+    font-size: 1rem;
+}

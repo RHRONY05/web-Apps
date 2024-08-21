@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="currencyConvertor.css">
+    <link rel="icon" href="currency-fevicon.webp">
+    <!-- link from:- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Currency convertor</h2>
+        <form action="">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input Value="1" type="text">
+            </div>
+            <div class="total-amount">
+                <p id="Box2">Amount in BDT</p>
+                <input class="box2" Value="" type="text">
+            </div>
+            <div class="select-container">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="Flag not found">
+                        <select name="from">
+                        </select>
+                    </div>
+                </div>
+                <div class="icon">
+                    <button class="exch-btn">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </button>
+                </div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select">
+                        <img src="https://flagsapi.com/BD/flat/64.png" alt="Flag not found">
+                        <select name="to">
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <p id="msg"></p>
+            <button class="button">Get Exchange Rate</button>
+
+        </form>
+    </div>
+
+    <script src="countryList.js"></script>
+    <script src="currencyConvertor.js"></script>
+</body>
+
+</html>
